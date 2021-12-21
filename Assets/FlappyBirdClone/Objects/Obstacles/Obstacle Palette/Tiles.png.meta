@@ -7,7 +7,7 @@ TextureImporter:
     second: Pipe_Opening_Top_Left_Green
   - first:
       213: -8377130690987618698
-    second: Pipe_Top_Right_Green
+    second: Pipe_Opening_Top_Right_Green
   - first:
       213: -4684333735789482159
     second: Pipe_Opening_Top_Left_Orange
@@ -31,7 +31,7 @@ TextureImporter:
     second: Pipe_Top_Left_Green
   - first:
       213: 3825752689756085014
-    second: Pipe_Top_Righ_Green
+    second: Pipe_Top_Right_Green
   - first:
       213: 7477827516038983822
     second: Pipe_Top_Left_Orange
@@ -280,7 +280,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pipe_Top_Right_Green
+      name: Pipe_Opening_Top_Right_Green
       rect:
         serializedVersion: 2
         x: 16
@@ -448,7 +448,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pipe_Top_Righ_Green
+      name: Pipe_Top_Right_Green
       rect:
         serializedVersion: 2
         x: 16
