@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerContrtoller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerContrtoller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,7 @@
       <updated>1639886683002</updated>
       <workItem from="1639886686710" duration="602000" />
       <workItem from="1639967941346" duration="2414000" />
+      <workItem from="1640137006091" duration="1665000" />
     </task>
     <servers />
   </component>

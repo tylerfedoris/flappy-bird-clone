@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 namespace FlappyBirdClone.Scripts
 {
@@ -8,6 +9,7 @@ namespace FlappyBirdClone.Scripts
     {
         [SerializeField] private float jumpStrength = 20f;
         [SerializeField] private float maxVelocity = 10.0f;
+        [SerializeField] private TMP_Text textComponent;
 
         private PlayerControls controls;
         private new Rigidbody2D rigidbody2D;
@@ -27,7 +29,10 @@ namespace FlappyBirdClone.Scripts
         // Update is called once per frame
         private void Update()
         {
-            Debug.Log(rigidbody2D.velocity.magnitude);
+            if (textComponent)
+            {
+                textComponent.text = $"Jump Velocity:\n{rigidbody2D.velocity.magnitude}";
+            }
         }
 
         private void Jump()
