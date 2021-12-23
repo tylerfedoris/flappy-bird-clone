@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 4739469507947629756}
   - component: {fileID: 5880530969752787066}
   - component: {fileID: 6391982749759304631}
+  - component: {fileID: 6268767494092488900}
   m_Layer: 0
   m_Name: AbovePipeOrange
   m_TagString: Untagged
@@ -391,6 +392,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &6268767494092488900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391343249794651438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ff20db6bd17849b3c92b32a1cf29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyLayerPrefab: {fileID: 5617746022391660225, guid: 9847cd34d8959f443bfd678c8ad91557, type: 3}
+  isAbove: 1
 --- !u!1 &7219821927624772319
 GameObject:
   m_ObjectHideFlags: 0

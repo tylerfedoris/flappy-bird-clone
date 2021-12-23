@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 4739469507947629756}
   - component: {fileID: 5880530969752787066}
   - component: {fileID: 6391982749759304631}
+  - component: {fileID: 3208297190624266223}
   m_Layer: 0
   m_Name: BelowPipeRed
   m_TagString: Untagged
@@ -391,6 +392,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &3208297190624266223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391343249794651438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ff20db6bd17849b3c92b32a1cf29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyLayerPrefab: {fileID: 2448178491844468914, guid: 0e4a96b59af74184e80fbe6a5a82f1c1, type: 3}
 --- !u!1 &7219821927624772319
 GameObject:
   m_ObjectHideFlags: 0
