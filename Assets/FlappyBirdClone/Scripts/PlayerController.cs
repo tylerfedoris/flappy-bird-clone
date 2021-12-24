@@ -13,9 +13,15 @@ namespace FlappyBirdClone.Scripts
 
         private PlayerControls controls;
         private new Rigidbody2D rigidbody2D;
+        private Camera mainCamera;
+
+        private const float yMin = 0.07f;
+        private const float yMax = 0.93f;
 
         private void Awake()
         {
+            mainCamera = Camera.main;
+            
             controls = new PlayerControls();
             controls.PlayerActions.Jump.performed += ctx => Jump();
         }
@@ -33,13 +39,30 @@ namespace FlappyBirdClone.Scripts
             {
                 textComponent.text = $"Jump Velocity:\n{rigidbody2D.velocity.magnitude}";
             }
+
+            var viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
+            
+            if (viewportPoint.y > yMax)
+            {
+                rigidbody2D.velocity = Vector2.zero;
+            }
+
+            viewportPoint.y = Mathf.Clamp(viewportPoint.y, yMin, yMax);
+            transform.position = mainCamera.ViewportToWorldPoint(viewportPoint);
         }
 
         private void Jump()
         {
+            var viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
+            
+            if (viewportPoint.y <= yMin || viewportPoint.y >= yMax)
+            {
+                rigidbody2D.velocity = Vector2.zero;
+            }
+            
             if (rigidbody2D.velocity.y < maxVelocity)
             {
-                rigidbody2D.AddForce(transform.up * jumpStrength, ForceMode2D.Impulse);   
+                rigidbody2D.AddForce(transform.up * jumpStrength, ForceMode2D.Impulse);
             }
         }
 

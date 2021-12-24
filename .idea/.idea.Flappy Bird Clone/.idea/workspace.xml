@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="" />
+    <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +74,7 @@
       <workItem from="1639886686710" duration="602000" />
       <workItem from="1639967941346" duration="2414000" />
       <workItem from="1640137006091" duration="5605000" />
+      <workItem from="1640370529102" duration="3292000" />
     </task>
     <servers />
   </component>
@@ -79,6 +94,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
