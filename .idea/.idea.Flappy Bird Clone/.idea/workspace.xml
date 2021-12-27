@@ -3,40 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeBlue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeBlue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeGreen.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeGreen.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeOrange.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeOrange.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeRed.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipeRed.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeBlue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeBlue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeGreen.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeGreen.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeOrange.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeOrange.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeRed.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipeRed.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerBlue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerBlue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerGreen.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerGreen.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerOrange.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerOrange.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerRed.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayerRed.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerBlue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerBlue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerGreen.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerGreen.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerOrange.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerOrange.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerRed.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayerRed.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundDay/BackgroundDay.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundDay/BackgroundDay.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundNight/BackgroundNight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundNight/BackgroundNight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundNightStarry/BackgroundNightStarry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundNightStarry/BackgroundNightStarry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundNightStarryLights/BackgroundNightStarryLights.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundNightStarryLights/BackgroundNightStarryLights.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundSunset/BackgroundSunset.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundSunset/BackgroundSunset.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipe.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/ContinuousMoveLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/ContinuousMoveLeft.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,6 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -99,7 +86,8 @@
       <workItem from="1640137006091" duration="5605000" />
       <workItem from="1640370529102" duration="3424000" />
       <workItem from="1640387700982" duration="1030000" />
-      <workItem from="1640571540740" duration="4021000" />
+      <workItem from="1640571540740" duration="4644000" />
+      <workItem from="1640633291468" duration="4971000" />
     </task>
     <servers />
   </component>

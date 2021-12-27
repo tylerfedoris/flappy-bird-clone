@@ -884,6 +884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1612522490}
+  - component: {fileID: 1612522491}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -905,6 +906,23 @@ Transform:
   m_Father: {fileID: 285628994}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1612522491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612522489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446317a7ad5955f45af9bc1618c2333e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleMoveSpeed: 3
+  aboveObstaclePrefab: {fileID: 6391343249794651438, guid: ce1c600bc8275ef4cb360713f32ec32a, type: 3}
+  belowObstaclePrefab: {fileID: 6391343249794651438, guid: f4438f50efc2ab74194eedb1c981baf9, type: 3}
+  maxObstacleSize: 3
+  spawnInterval: 2
 --- !u!1 &1635371121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,6 +1155,10 @@ PrefabInstance:
     - target: {fileID: 3742960361827052755, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742960361827052755, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}

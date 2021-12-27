@@ -5,7 +5,7 @@ namespace FlappyBirdClone.Scripts
 {
     public class ContinuousMoveLeft : MonoBehaviour
     {
-        [SerializeField] private float speed;
+        public float speed;
         
         private Rigidbody2D rigidBody2D;
 

@@ -7,11 +7,15 @@ namespace FlappyBirdClone.Scripts
     {
         [SerializeField] private GameObject bodyLayerPrefab;
         [SerializeField] private bool isAbove = false;
+        [SerializeField] private int bodyLayers = 3;
         
         private Transform thisTransform;
-        private float aboveYPosition = 3.5f;
-        private float belowYPosition = -3.5f;
+        private const float aboveYPosition = 3.5f;
+        private const float belowYPosition = -3.5f;
         private Vector3 position;
+        private Camera mainCamera;
+        private Vector3 screenBounds;
+        private const float outOfBoundsThreshold = 3f;
 
         private void Awake()
         {
@@ -25,10 +29,22 @@ namespace FlappyBirdClone.Scripts
 
         private void Start()
         {
-            AddBodyLayer(3);
+            mainCamera = Camera.main;
+            screenBounds =
+                mainCamera
+                    ? mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z)) 
+                    : Vector3.zero;
         }
 
-        public void AddBodyLayer(int numLayers)
+        private void Update()
+        {
+            if (transform.position.x < -screenBounds.x - outOfBoundsThreshold)
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        public void AddBodyLayers(int numLayers)
         {
             var offsetSign = isAbove ? 1 : -1;
             var yOffset = isAbove ? 2.0f : -2.0f;
