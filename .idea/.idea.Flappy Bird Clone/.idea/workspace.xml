@@ -4,10 +4,8 @@
     <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundDay/BackgroundDay.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/BackgroundDay/BackgroundDay.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/BackgroundLayer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22UKMpcEcJtkz7SGrnhMuK3vsbR" />
   <component name="ProjectViewState">

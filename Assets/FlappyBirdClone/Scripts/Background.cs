@@ -28,6 +28,10 @@ namespace FlappyBirdClone.Scripts
 
         [SerializeField] private BackgroundObject SectionA;
         [SerializeField] private BackgroundObject SectionB;
+        [SerializeField] private BackgroundObject SectionC;
+
+        private Camera mainCamera;
+        private Vector3 screenBounds;
 
         private void Awake()
         {
@@ -63,19 +67,20 @@ namespace FlappyBirdClone.Scripts
             {
                 spriteRenderer.sprite = backgroundSprites[backgroundIndex].bottom;
             }
-        }
-
-        // Start is called before the first frame update
-        private void Start()
-        {
-            var thisTransform = transform;
-            var thisRotation = thisTransform.rotation;
-        }
-
-        // Update is called once per frame
-        private void Update()
-        {
-        
+            
+            // Section C Sprites
+            foreach (var spriteRenderer in SectionC.top.GetComponentsInChildren<SpriteRenderer>())
+            {
+                spriteRenderer.sprite = backgroundSprites[backgroundIndex].top;
+            }
+            foreach (var spriteRenderer in SectionC.mid.GetComponentsInChildren<SpriteRenderer>())
+            {
+                spriteRenderer.sprite = backgroundSprites[backgroundIndex].mid;
+            }
+            foreach (var spriteRenderer in SectionC.bottom.GetComponentsInChildren<SpriteRenderer>())
+            {
+                spriteRenderer.sprite = backgroundSprites[backgroundIndex].bottom;
+            }
         }
     }
 }
