@@ -7,8 +7,7 @@ namespace FlappyBirdClone.Scripts
     {
         [SerializeField] private GameObject bodyLayerPrefab;
         [SerializeField] private bool isAbove = false;
-        [SerializeField] private int bodyLayers = 3;
-        
+
         private Transform thisTransform;
         private const float aboveYPosition = 3.5f;
         private const float belowYPosition = -3.5f;

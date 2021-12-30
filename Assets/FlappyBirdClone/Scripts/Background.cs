@@ -23,7 +23,6 @@ namespace FlappyBirdClone.Scripts
         }
 
         [SerializeField] private List<BackgroundSpriteObject> backgroundSprites;
-        [SerializeField] private float xOffset = 10.5f;
         [SerializeField] private int backgroundIndex = 0;
 
         [SerializeField] private BackgroundObject SectionA;

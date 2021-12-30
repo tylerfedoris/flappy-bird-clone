@@ -2153,6 +2153,10 @@ MonoBehaviour:
     top: {fileID: 944644699467201971}
     mid: {fileID: 7410678736495842311}
     bottom: {fileID: 7923018287585605446}
+  SectionC:
+    top: {fileID: 0}
+    mid: {fileID: 0}
+    bottom: {fileID: 0}
 --- !u!1 &8398896521329691137
 GameObject:
   m_ObjectHideFlags: 0

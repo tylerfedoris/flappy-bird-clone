@@ -35,6 +35,11 @@ namespace FlappyBirdClone.Scripts
         // Update is called once per frame
         private void Update()
         {
+            if (GameEvents.Current.GameOver)
+            {
+                return;
+            }
+            
             if (textComponent)
             {
                 textComponent.text = $"Jump Velocity:\n{rigidbody2D.velocity.magnitude}";
@@ -53,6 +58,11 @@ namespace FlappyBirdClone.Scripts
 
         private void Jump()
         {
+            if (GameEvents.Current.GameOver)
+            {
+                return;
+            }
+            
             var viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
             
             if (viewportPoint.y <= yMin || viewportPoint.y >= yMax)
@@ -64,6 +74,11 @@ namespace FlappyBirdClone.Scripts
             {
                 rigidbody2D.AddForce(transform.up * jumpStrength, ForceMode2D.Impulse);
             }
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            GameEvents.Current.TriggerGameOver();
         }
 
         private void OnEnable()

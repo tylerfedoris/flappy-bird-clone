@@ -28,6 +28,11 @@ namespace FlappyBirdClone.Scripts
 
         private void FixedUpdate()
         {
+            if (GameEvents.Current.GameOver)
+            {
+                return;
+            }
+            
             var thisTransform = transform;
             rigidBody2D.MovePosition(thisTransform.position + (-thisTransform.right * (Time.deltaTime * speed)));
         }

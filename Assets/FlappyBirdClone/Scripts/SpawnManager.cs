@@ -33,6 +33,11 @@ namespace FlappyBirdClone.Scripts
         // Update is called once per frame
         private void Update()
         {
+            if (GameEvents.Current.GameOver)
+            {
+                return;
+            }
+            
             elapsedTime += Time.deltaTime;
             if (elapsedTime >= spawnInterval)
             {
