@@ -4,13 +4,123 @@
     <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/ContinuousMoveLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/ContinuousMoveLeft.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Obstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Summer_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Bottom_Winter_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Summer_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_02.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_02.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_03.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_03.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_04.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Dirt_Top_Winter_04.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Obstacle Palette.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Obstacle Palette.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Left_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Bottom_Right_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Left_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Mid_Right_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Left_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Bottom_Right_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Left_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Right_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Right_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Right_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Right_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Right_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Opening_Top_Right_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Left_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Righ_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Righ_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Blue.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Blue.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Green.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Green.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Orange.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Orange.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Red.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Obstacle Palette/Pipe_Top_Right_Red.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +196,7 @@
       <workItem from="1640571540740" duration="4644000" />
       <workItem from="1640633291468" duration="4971000" />
       <workItem from="1640823594535" duration="1742000" />
+      <workItem from="1641009555864" duration="923000" />
     </task>
     <servers />
   </component>
