@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5043260032075641496}
   - component: {fileID: 8349956562272438820}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OpeningRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2038500872397572374}
   - component: {fileID: 2125019772531233805}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BaseLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4989951397017206093}
   - component: {fileID: 6480697909082973761}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BaseRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7597437138601038929}
   - component: {fileID: 6355056109748691894}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OpeningLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9077668029712715961}
   - component: {fileID: 8630508727772472714}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BaseLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 6391982749759304631}
   - component: {fileID: -7905576301564918507}
   - component: {fileID: -4548727389975287400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AbovePipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyLayerPrefab: {fileID: 8834113638093263860, guid: ed0ef74ab0cd57a4f93775c94a11aaa2, type: 3}
   isAbove: 1
-  bodyLayers: 3
 --- !u!114 &-4548727389975287400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7852817753639194550}
   - component: {fileID: 8682860539677915658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OpeningLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

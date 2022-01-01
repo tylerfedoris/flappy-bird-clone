@@ -29,9 +29,6 @@ namespace FlappyBirdClone.Scripts
         [SerializeField] private BackgroundObject SectionB;
         [SerializeField] private BackgroundObject SectionC;
 
-        private Camera mainCamera;
-        private Vector3 screenBounds;
-
         private void Awake()
         {
             if (backgroundIndex > backgroundSprites.Count)

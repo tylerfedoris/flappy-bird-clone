@@ -10,10 +10,8 @@ namespace FlappyBirdClone.Scripts
 
         private Transform thisTransform;
         private const float aboveYPosition = 3.5f;
-        private const float belowYPosition = -3.5f;
+        private const float belowYPosition = -3.0f;
         private Vector3 position;
-        private Camera mainCamera;
-        private Vector3 screenBounds;
         private const float outOfBoundsThreshold = 3f;
 
         private void Awake()
@@ -26,18 +24,9 @@ namespace FlappyBirdClone.Scripts
             thisTransform.position = position;
         }
 
-        private void Start()
-        {
-            mainCamera = Camera.main;
-            screenBounds =
-                mainCamera
-                    ? mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z)) 
-                    : Vector3.zero;
-        }
-
         private void Update()
         {
-            if (transform.position.x < -screenBounds.x - outOfBoundsThreshold)
+            if (transform.position.x < -GameEvents.Current.ScreenBounds.x - outOfBoundsThreshold)
             {
                 Destroy(gameObject);
             }

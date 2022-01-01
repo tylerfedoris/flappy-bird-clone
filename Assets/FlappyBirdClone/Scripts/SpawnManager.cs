@@ -12,8 +12,6 @@ namespace FlappyBirdClone.Scripts
         [SerializeField] private int maxObstacleSize = 3;
         [SerializeField] private float spawnInterval = 2f;
 
-        private Camera mainCamera;
-        private Vector3 screenBounds;
         private Vector3 spawnPosition;
         private const float spawnPositionOffset = 3f;
         private float elapsedTime = 0.0f;
@@ -21,12 +19,7 @@ namespace FlappyBirdClone.Scripts
         // Start is called before the first frame update
         private void Start()
         {
-            mainCamera = Camera.main;
-            screenBounds =
-                mainCamera
-                    ? mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z)) 
-                    : Vector3.zero;
-            spawnPosition = new Vector3(screenBounds.x + spawnPositionOffset, 0f, 0f);
+            spawnPosition = new Vector3(GameEvents.Current.ScreenBounds.x + spawnPositionOffset, 0f, 0f);
             SpawnObstaclePair();
         }
 

@@ -23,14 +23,21 @@ namespace FlappyBirdClone.Scripts
 
         private Season[] seasons;
         private TimeOfDay[] timesOfDay;
+        private Camera mainCamera;
 
         public static GameEvents Current;
         public bool GameOver = false;
         public Season CurrentSeason = Season.Summer;
         public TimeOfDay CurrentTimeOfDay = TimeOfDay.Day;
+        public Vector3 ScreenBounds;
 
         private void Awake()
         {
+            mainCamera = Camera.main;
+            ScreenBounds =
+                mainCamera
+                    ? mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z)) 
+                    : Vector3.zero;
             Current = this;
         }
 

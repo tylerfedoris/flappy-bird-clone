@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using FlappyBirdClone.Scripts;
 using UnityEngine;
 
 public class BackgroundLayer : MonoBehaviour
 {
-    private Camera mainCamera;
-    private Vector3 screenBounds;
     private float xOffset = 21f;
     private int numSections = 3;
     private Vector3 originalPosition;
@@ -13,11 +12,6 @@ public class BackgroundLayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainCamera = Camera.main;
-        screenBounds =
-            mainCamera
-                ? mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z)) 
-                : Vector3.zero;
         originalPosition = transform.position;
     }
 
@@ -25,7 +19,7 @@ public class BackgroundLayer : MonoBehaviour
     void Update()
     {
         var position = transform.position;
-        if (position.x <= -screenBounds.x - xOffset)
+        if (position.x <= -GameEvents.Current.ScreenBounds.x - xOffset)
         {
             transform.position = new Vector3(position.x + (xOffset * numSections), position.y, position.z);
         }
