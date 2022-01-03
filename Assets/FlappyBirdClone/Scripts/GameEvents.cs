@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +7,8 @@ namespace FlappyBirdClone.Scripts
 {
     public class GameEvents : MonoBehaviour
     {
+        [SerializeField] private TMP_Text ScoreText;
+        
         public enum Season
         {
             Summer,
@@ -24,6 +27,7 @@ namespace FlappyBirdClone.Scripts
         private Season[] seasons;
         private TimeOfDay[] timesOfDay;
         private Camera mainCamera;
+        private int currentScore = 0;
 
         public static GameEvents Current;
         public bool GameOver = false;
@@ -41,6 +45,14 @@ namespace FlappyBirdClone.Scripts
             Current = this;
         }
 
+        private void Start()
+        {
+            if (ScoreText)
+            {
+                ScoreText.text = currentScore.ToString();
+            }
+        }
+
         private void Update()
         {
             if (Input.GetKeyDown("r"))
@@ -56,6 +68,15 @@ namespace FlappyBirdClone.Scripts
             Debug.Log("GAME OVER!");
             GameOver = true;
             onTriggerGameOver?.Invoke();
+        }
+
+        public void IncreaseScore()
+        {
+            currentScore++;
+            if (ScoreText)
+            {
+                ScoreText.text = currentScore.ToString();
+            }
         }
 
         public void IncrementSeason()

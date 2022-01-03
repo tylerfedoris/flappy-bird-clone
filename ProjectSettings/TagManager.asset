@@ -9,6 +9,7 @@ TagManager:
   - BackgroundBottom
   - GroundTop
   - GroundBottom
+  - Obstacle
   layers:
   - Default
   - TransparentFX

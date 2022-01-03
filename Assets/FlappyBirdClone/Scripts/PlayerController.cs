@@ -81,6 +81,14 @@ namespace FlappyBirdClone.Scripts
             GameEvents.Current.TriggerGameOver();
         }
 
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Obstacle"))
+            {
+                GameEvents.Current.IncreaseScore();
+            }
+        }
+
         private void OnEnable()
         {
             controls.PlayerActions.Enable();
