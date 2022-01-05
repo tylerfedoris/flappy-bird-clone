@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: -1583787373
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8955812619259062215, guid: 9d68cadf77d52b54d96694449c57e169, type: 3}
+  m_Sprite: {fileID: 4753258692078137619, guid: 9d68cadf77d52b54d96694449c57e169, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -153,7 +153,7 @@ SpriteRenderer:
   m_SortingLayerID: -1583787373
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8933607801220796041, guid: 9d68cadf77d52b54d96694449c57e169, type: 3}
+  m_Sprite: {fileID: 4680653795402065389, guid: 9d68cadf77d52b54d96694449c57e169, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 4174365902464937241}
   - component: {fileID: -8085219130155200627}
   m_Layer: 0
-  m_Name: AbovePipeBodyLayer
+  m_Name: AbovePipeBodyLayer_Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

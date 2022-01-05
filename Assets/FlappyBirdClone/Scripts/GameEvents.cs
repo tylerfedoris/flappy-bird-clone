@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,6 +9,7 @@ namespace FlappyBirdClone.Scripts
     public class GameEvents : MonoBehaviour
     {
         [SerializeField] private TMP_Text ScoreText;
+        [SerializeField] private TMP_Text BestScoreText;
         
         public enum Season
         {
@@ -23,11 +25,14 @@ namespace FlappyBirdClone.Scripts
             Night,
             Twilight
         }
+        
+        private const string bestScoreKey = "BestScore";
 
         private Season[] seasons;
         private TimeOfDay[] timesOfDay;
         private Camera mainCamera;
         private int currentScore = 0;
+        private int bestScore = 0;
 
         public static GameEvents Current;
         public bool GameOver = false;
@@ -37,6 +42,7 @@ namespace FlappyBirdClone.Scripts
 
         private void Awake()
         {
+            bestScore = PlayerPrefs.GetInt(bestScoreKey, 0);
             mainCamera = Camera.main;
             ScreenBounds =
                 mainCamera
@@ -50,6 +56,11 @@ namespace FlappyBirdClone.Scripts
             if (ScoreText)
             {
                 ScoreText.text = currentScore.ToString();
+            }
+
+            if (BestScoreText)
+            {
+                BestScoreText.text = bestScore.ToString();
             }
         }
 
@@ -70,12 +81,23 @@ namespace FlappyBirdClone.Scripts
             onTriggerGameOver?.Invoke();
         }
 
+        [SuppressMessage("ReSharper", "InvertIf")]
         public void IncreaseScore()
         {
             currentScore++;
             if (ScoreText)
             {
                 ScoreText.text = currentScore.ToString();
+            }
+
+            if (currentScore > bestScore)
+            {
+                bestScore = currentScore;
+                PlayerPrefs.SetInt(bestScoreKey, bestScore);
+                if (BestScoreText)
+                {
+                    BestScoreText.text = bestScore.ToString();
+                }
             }
         }
 

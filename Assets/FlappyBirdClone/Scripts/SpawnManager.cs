@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,8 +8,8 @@ namespace FlappyBirdClone.Scripts
     public class SpawnManager : MonoBehaviour
     {
         [SerializeField] private float obstacleMoveSpeed = 3.0f;
-        [SerializeField] private GameObject aboveObstaclePrefab;
-        [SerializeField] private GameObject belowObstaclePrefab;
+        [SerializeField] private List<GameObject> aboveObstaclePrefabs;
+        [SerializeField] private List<GameObject> belowObstaclePrefabs;
         [SerializeField] private int maxObstacleSize = 3;
         [SerializeField] private float spawnInterval = 2f;
 
@@ -43,12 +44,14 @@ namespace FlappyBirdClone.Scripts
         {
             var parentObject = GameObject.Find("_Dynamic");
             var parentRotation = parentObject.transform.rotation;
-            
+
+            var aboveObstaclePrefab = aboveObstaclePrefabs[Random.Range(0, aboveObstaclePrefabs.Count)];
             var aboveObstacle = Instantiate(aboveObstaclePrefab, spawnPosition, parentRotation,
                 parentObject.transform);
-            var aboveObstacleSize = Random.Range(0, maxObstacleSize + 1);
+            int aboveObstacleSize = Random.Range(0, maxObstacleSize + 1);
             aboveObstacle.GetComponent<Obstacle>().AddBodyLayers(aboveObstacleSize);
 
+            var belowObstaclePrefab = belowObstaclePrefabs[Random.Range(0, belowObstaclePrefabs.Count)];
             var belowObstacle = Instantiate(belowObstaclePrefab, spawnPosition, parentRotation,
                 parentObject.transform);
             belowObstacle.GetComponent<Obstacle>().AddBodyLayers(maxObstacleSize - aboveObstacleSize);

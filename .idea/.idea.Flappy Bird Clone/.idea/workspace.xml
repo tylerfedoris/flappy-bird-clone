@@ -3,19 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipe.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipe.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayer.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Input/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Input/PlayerControls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Input/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Input/PlayerControls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +92,8 @@
       <workItem from="1640633291468" duration="4971000" />
       <workItem from="1640823594535" duration="1742000" />
       <workItem from="1641009555864" duration="11150000" />
+      <workItem from="1641242798065" duration="2005000" />
+      <workItem from="1641357435138" duration="1179000" />
     </task>
     <servers />
   </component>
