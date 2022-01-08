@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/AbovePipe.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipe.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/BelowPipe.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayer.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/AbovePipeBodyLayer.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayer.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/PipeBodyLayers/BelowPipeBodyLayer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/BackgroundLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/BackgroundLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/ContinuousMoveLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/ContinuousMoveLeft.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +86,7 @@
       <workItem from="1641009555864" duration="11150000" />
       <workItem from="1641242798065" duration="2005000" />
       <workItem from="1641357435138" duration="1179000" />
+      <workItem from="1641616949461" duration="3376000" />
     </task>
     <servers />
   </component>

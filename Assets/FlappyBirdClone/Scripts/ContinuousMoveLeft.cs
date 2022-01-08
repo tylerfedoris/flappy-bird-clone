@@ -28,7 +28,7 @@ namespace FlappyBirdClone.Scripts
 
         private void FixedUpdate()
         {
-            if (GameEvents.Current.GameOver)
+            if (!GameEvents.Current.GameStart || GameEvents.Current.GameOver)
             {
                 return;
             }

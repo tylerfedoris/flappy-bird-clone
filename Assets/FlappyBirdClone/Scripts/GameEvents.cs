@@ -35,6 +35,7 @@ namespace FlappyBirdClone.Scripts
         private int bestScore = 0;
 
         public static GameEvents Current;
+        public bool GameStart = false;
         public bool GameOver = false;
         public Season CurrentSeason = Season.Summer;
         public TimeOfDay CurrentTimeOfDay = TimeOfDay.Day;

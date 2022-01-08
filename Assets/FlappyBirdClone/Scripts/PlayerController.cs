@@ -39,7 +39,12 @@ namespace FlappyBirdClone.Scripts
             {
                 return;
             }
-            
+
+            if (!GameEvents.Current.GameStart && rigidbody2D.bodyType != RigidbodyType2D.Static)
+            {
+                rigidbody2D.bodyType = RigidbodyType2D.Static;
+            }
+
             if (textComponent)
             {
                 textComponent.text = $"Jump Velocity:\n{rigidbody2D.velocity.magnitude}";
@@ -61,6 +66,12 @@ namespace FlappyBirdClone.Scripts
             if (GameEvents.Current.GameOver)
             {
                 return;
+            }
+            
+            if (!GameEvents.Current.GameStart)
+            {
+                GameEvents.Current.GameStart = true;
+                rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
             }
             
             var viewportPoint = mainCamera.WorldToViewportPoint(transform.position);

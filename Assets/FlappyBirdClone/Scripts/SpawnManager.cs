@@ -27,7 +27,7 @@ namespace FlappyBirdClone.Scripts
         // Update is called once per frame
         private void Update()
         {
-            if (GameEvents.Current.GameOver)
+            if (!GameEvents.Current.GameStart || GameEvents.Current.GameOver)
             {
                 return;
             }
