@@ -10,6 +10,10 @@ namespace FlappyBirdClone.Scripts
     {
         [SerializeField] private TMP_Text ScoreText;
         [SerializeField] private TMP_Text BestScoreText;
+        [SerializeField] private int DayLengthByScore = 20;
+        [SerializeField] private bool isDebugging = false;
+
+        private float debuggingElapsedTime = 11f;
         
         public enum Season
         {
@@ -19,11 +23,11 @@ namespace FlappyBirdClone.Scripts
 
         public enum TimeOfDay
         {
-            Day,
-            Sunset,
-            Evening,
-            Night,
-            Twilight
+            Day = 0,
+            Sunset = 1,
+            Evening = 2,
+            Night = 3,
+            Twilight = 4
         }
         
         private const string bestScoreKey = "BestScore";
@@ -71,6 +75,17 @@ namespace FlappyBirdClone.Scripts
             {
                 SceneManager.LoadScene("MainScene");
             }
+
+            if (isDebugging)
+            {
+                debuggingElapsedTime += Time.deltaTime;
+            }
+            
+            if (isDebugging && debuggingElapsedTime > 11f)
+            {
+                IncrementTimeOfDay();
+                debuggingElapsedTime = 0;
+            }
         }
 
         public event Action onTriggerGameOver;
@@ -100,6 +115,11 @@ namespace FlappyBirdClone.Scripts
                     BestScoreText.text = bestScore.ToString();
                 }
             }
+
+            if (currentScore % DayLengthByScore == 0)
+            {
+                IncrementTimeOfDay();
+            }
         }
 
         public void IncrementSeason()
@@ -111,9 +131,12 @@ namespace FlappyBirdClone.Scripts
                 _ => throw new ArgumentOutOfRangeException()
             };
         }
-        
-        public void IncrementTimeOfDay()
+
+        public event Action onIncrementTimeOfDay;
+
+        private void IncrementTimeOfDay()
         {
+            onIncrementTimeOfDay?.Invoke();
             CurrentTimeOfDay = CurrentTimeOfDay switch
             {
                 TimeOfDay.Day => TimeOfDay.Sunset,

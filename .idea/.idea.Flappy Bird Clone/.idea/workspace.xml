@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a19c3ff1-d6a7-4017-8c75-2af4b2313fa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flappy Bird Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Blue/AbovePipe_Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Blue/AbovePipe_Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Green/AbovePipe_Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Green/AbovePipe_Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Orange/AbovePipe_Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Orange/AbovePipe_Orange.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Red/AbovePipe_Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Obstacles/Pipes/Red/AbovePipe_Red.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Objects/Background/Background.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/GameEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBirdClone/_Levels/MainScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/Background.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/BackgroundLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBirdClone/Scripts/BackgroundManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22UKMpcEcJtkz7SGrnhMuK3vsbR" />
   <component name="ProjectViewState">
@@ -91,7 +88,8 @@
       <workItem from="1641357435138" duration="1179000" />
       <workItem from="1641616949461" duration="3973000" />
       <workItem from="1641705093927" duration="3634000" />
-      <workItem from="1641739305176" duration="6899000" />
+      <workItem from="1641739305176" duration="7496000" />
+      <workItem from="1641764988256" duration="3812000" />
     </task>
     <servers />
   </component>
