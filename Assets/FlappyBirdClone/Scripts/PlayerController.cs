@@ -13,11 +13,15 @@ namespace FlappyBirdClone.Scripts
         [SerializeField] private float positiveVelocityRotation = 40.0f;
         [SerializeField] private float negativeVelocityRotation = -40.0f;
         [SerializeField] private TMP_Text textComponent;
-        
+        [SerializeField] private AudioClip jumpSoundEffect;
+        [SerializeField] private AudioClip collisionSoundEffect;
+        [SerializeField] private AudioClip pointSoundEffect;
 
         private PlayerControls controls;
         private new Rigidbody2D rigidbody2D;
         private Camera mainCamera;
+        private AudioSource audioSource;
+        private Animator animator;
 
         private const float yMin = 0.07f;
         private const float yMax = 0.93f;
@@ -31,6 +35,9 @@ namespace FlappyBirdClone.Scripts
             
             controls = new PlayerControls();
             controls.PlayerActions.Jump.performed += ctx => Jump();
+
+            audioSource = GetComponent<AudioSource>();
+            animator = GetComponent<Animator>();
         }
 
         // Start is called before the first frame update
@@ -42,12 +49,17 @@ namespace FlappyBirdClone.Scripts
         // Update is called once per frame
         private void Update()
         {
-            if (!GameEvents.Current.GameStart || GameEvents.Current.GameOver)
+            if (!GameEvents.Current.GameStart)
             {
                 if (rigidbody2D.bodyType != RigidbodyType2D.Static)
                 {
                     rigidbody2D.bodyType = RigidbodyType2D.Static;
                 }
+                return;
+            }
+
+            if (GameEvents.Current.GameOver)
+            {
                 return;
             }
 
@@ -85,6 +97,8 @@ namespace FlappyBirdClone.Scripts
                 rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
             }
             
+            audioSource.PlayOneShot(jumpSoundEffect);
+            
             var viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
             
             if (viewportPoint.y <= yMin || viewportPoint.y >= yMax)
@@ -100,16 +114,35 @@ namespace FlappyBirdClone.Scripts
 
         private void OnCollisionEnter2D(Collision2D other)
         {
+            if (GameEvents.Current.GameOver) return;
+            
+            rigidbody2D.constraints = RigidbodyConstraints2D.None;
+            
+            // how much the player should be knocked back
+            var magnitude = 1f;
+            
+            // calculate force vector
+            var force = transform.position - other.transform.position;
+            
+            // normalize force vector to get direction only and trim magnitude
+            force.Normalize();
+            
+            rigidbody2D.AddForce(force * magnitude, ForceMode2D.Impulse);
+            animator.speed = 0;
+            audioSource.PlayOneShot(collisionSoundEffect);
             GameEvents.Current.TriggerGameOver();
         }
 
         private void OnTriggerExit2D(Collider2D other)
         { 
+            if (GameEvents.Current.GameOver) return;
+            
             timeSinceScored += Time.deltaTime;
 
             if (!(timeSinceScored > -scoredDelay) || !other.gameObject.CompareTag("Obstacle")) return;
             
             GameEvents.Current.IncreaseScore();
+            audioSource.PlayOneShot(pointSoundEffect);
             timeSinceScored = 0f;
         }
 
