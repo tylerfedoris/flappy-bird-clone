@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1175698430}
   BestScoreText: {fileID: 579157857}
+  GameStart: 0
   GameOver: 0
   CurrentSeason: 0
   CurrentTimeOfDay: 0
@@ -1251,7 +1252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135.19995, y: -52.19995}
+  m_AnchoredPosition: {x: 135.19995, y: -142}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1484889931 stripped
@@ -1302,7 +1303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446317a7ad5955f45af9bc1618c2333e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleMoveSpeed: 4
+  obstacleMoveSpeed: 5
   aboveObstaclePrefabs:
   - {fileID: 6391343249794651438, guid: 643ae8d8a215a6345a6a3ebc99b2ffb4, type: 3}
   - {fileID: 6391343249794651438, guid: ce1c600bc8275ef4cb360713f32ec32a, type: 3}
@@ -1314,7 +1315,7 @@ MonoBehaviour:
   - {fileID: 6391343249794651438, guid: a4dfccaad5ab2ff43b5de91b5d8bc81f, type: 3}
   - {fileID: 6391343249794651438, guid: 4be758b727ee2424a95eef2706533512, type: 3}
   maxObstacleSize: 3
-  spawnInterval: 2
+  spawnInterval: 1.5
 --- !u!1 &1635371121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1557,10 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 1460713597}
+    - target: {fileID: 2753509960194047904, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
+      propertyPath: fallingDuration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3742960361827052754, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1604,8 +1609,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3742960361827052755, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
+      propertyPath: m_Interpolate
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1619,7 +1636,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5559537915916261409, guid: 6cc038317e17ebf45abafe0a33f110c8, type: 3}
       propertyPath: speed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6340079047559259081, guid: 6cc038317e17ebf45abafe0a33f110c8, type: 3}
       propertyPath: m_Name

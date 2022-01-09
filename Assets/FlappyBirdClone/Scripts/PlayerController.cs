@@ -17,6 +17,8 @@ namespace FlappyBirdClone.Scripts
 
         private const float yMin = 0.07f;
         private const float yMax = 0.93f;
+        
+        private float elapsedFallingTime = 0f;
 
         private void Awake()
         {
@@ -47,7 +49,7 @@ namespace FlappyBirdClone.Scripts
 
             if (textComponent)
             {
-                textComponent.text = $"Jump Velocity:\n{rigidbody2D.velocity.magnitude}";
+                textComponent.text = $"Jump Velocity:\n{rigidbody2D.velocity.y}";
             }
 
             var viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
@@ -59,6 +61,8 @@ namespace FlappyBirdClone.Scripts
 
             viewportPoint.y = Mathf.Clamp(viewportPoint.y, yMin, yMax);
             transform.position = mainCamera.ViewportToWorldPoint(viewportPoint);
+            
+            transform.rotation = Quaternion.Lerp(Quaternion.identity, Quaternion.Euler(0f, 0f, 40f), rigidbody2D.velocity.y);
         }
 
         private void Jump()
