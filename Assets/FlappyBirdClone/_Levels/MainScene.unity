@@ -1557,10 +1557,6 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 1460713597}
-    - target: {fileID: 2753509960194047904, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
-      propertyPath: fallingDuration
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3742960361827052754, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1608,22 +1604,6 @@ PrefabInstance:
     - target: {fileID: 3742960361827052755, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
-      propertyPath: m_Constraints
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3742960361827052766, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720613483a90ed64ea1788e3ea85450f, type: 3}

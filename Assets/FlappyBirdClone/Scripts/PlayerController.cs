@@ -8,8 +8,12 @@ namespace FlappyBirdClone.Scripts
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private float jumpStrength = 20f;
+        [SerializeField] private float minVelocity = -10.0f;
         [SerializeField] private float maxVelocity = 10.0f;
+        [SerializeField] private float positiveVelocityRotation = 40.0f;
+        [SerializeField] private float negativeVelocityRotation = -40.0f;
         [SerializeField] private TMP_Text textComponent;
+        
 
         private PlayerControls controls;
         private new Rigidbody2D rigidbody2D;
@@ -18,7 +22,8 @@ namespace FlappyBirdClone.Scripts
         private const float yMin = 0.07f;
         private const float yMax = 0.93f;
         
-        private float elapsedFallingTime = 0f;
+        private float scoredDelay = 1f;
+        private float timeSinceScored = 0f; 
 
         private void Awake()
         {
@@ -37,14 +42,13 @@ namespace FlappyBirdClone.Scripts
         // Update is called once per frame
         private void Update()
         {
-            if (GameEvents.Current.GameOver)
+            if (!GameEvents.Current.GameStart || GameEvents.Current.GameOver)
             {
+                if (rigidbody2D.bodyType != RigidbodyType2D.Static)
+                {
+                    rigidbody2D.bodyType = RigidbodyType2D.Static;
+                }
                 return;
-            }
-
-            if (!GameEvents.Current.GameStart && rigidbody2D.bodyType != RigidbodyType2D.Static)
-            {
-                rigidbody2D.bodyType = RigidbodyType2D.Static;
             }
 
             if (textComponent)
@@ -61,8 +65,11 @@ namespace FlappyBirdClone.Scripts
 
             viewportPoint.y = Mathf.Clamp(viewportPoint.y, yMin, yMax);
             transform.position = mainCamera.ViewportToWorldPoint(viewportPoint);
-            
-            transform.rotation = Quaternion.Lerp(Quaternion.identity, Quaternion.Euler(0f, 0f, 40f), rigidbody2D.velocity.y);
+
+            float t = (rigidbody2D.velocity.y - minVelocity) / (maxVelocity - minVelocity);
+            var newRotation = Quaternion.Lerp(Quaternion.Euler(0f, 0f, negativeVelocityRotation), 
+                Quaternion.Euler(0f, 0f, positiveVelocityRotation), t);
+            rigidbody2D.MoveRotation(newRotation);
         }
 
         private void Jump()
@@ -97,11 +104,13 @@ namespace FlappyBirdClone.Scripts
         }
 
         private void OnTriggerExit2D(Collider2D other)
-        {
-            if (other.gameObject.CompareTag("Obstacle"))
-            {
-                GameEvents.Current.IncreaseScore();
-            }
+        { 
+            timeSinceScored += Time.deltaTime;
+
+            if (!(timeSinceScored > -scoredDelay) || !other.gameObject.CompareTag("Obstacle")) return;
+            
+            GameEvents.Current.IncreaseScore();
+            timeSinceScored = 0f;
         }
 
         private void OnEnable()
