@@ -81,10 +81,10 @@ namespace FlappyBirdClone.Scripts
                 debuggingElapsedTime += Time.deltaTime;
             }
             
-            if (isDebugging && debuggingElapsedTime > 11f)
+            if (isDebugging && debuggingElapsedTime > 7.5f)
             {
                 IncrementTimeOfDay();
-                debuggingElapsedTime = 0;
+                debuggingElapsedTime = 0f;
             }
         }
 

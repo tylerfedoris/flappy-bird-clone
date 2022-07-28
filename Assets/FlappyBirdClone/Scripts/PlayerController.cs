@@ -16,6 +16,7 @@ namespace FlappyBirdClone.Scripts
         [SerializeField] private AudioClip jumpSoundEffect;
         [SerializeField] private AudioClip collisionSoundEffect;
         [SerializeField] private AudioClip pointSoundEffect;
+        [SerializeField] private bool godMode = false;
 
         private PlayerControls controls;
         private new Rigidbody2D rigidbody2D;
@@ -114,7 +115,7 @@ namespace FlappyBirdClone.Scripts
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (GameEvents.Current.GameOver) return;
+            if (GameEvents.Current.GameOver || godMode) return;
             
             rigidbody2D.constraints = RigidbodyConstraints2D.None;
             
