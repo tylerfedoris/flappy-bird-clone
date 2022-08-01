@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using TMPro;
 using UnityEngine;
@@ -95,6 +96,14 @@ namespace FlappyBirdClone.Scripts
             Debug.Log("GAME OVER!");
             GameOver = true;
             onTriggerGameOver?.Invoke();
+
+            StartCoroutine(RestartLevelAfterDelay());
+        }
+
+        private IEnumerator RestartLevelAfterDelay()
+        {
+            yield return new WaitForSeconds(1.5f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         [SuppressMessage("ReSharper", "InvertIf")]

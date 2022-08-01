@@ -4,8 +4,8 @@ namespace FlappyBirdClone.Scripts
 {
     public class BackgroundLayer : MonoBehaviour
     {
-        private float xOffset = 21f;
-        private int numSections = 3;
+        private float xOffset = 10.5f;
+        private int numSections = 6;
         private Vector3 originalPosition;
     
         // Start is called before the first frame update
@@ -18,7 +18,7 @@ namespace FlappyBirdClone.Scripts
         private void Update()
         {
             var position = transform.position;
-            if (position.x <= -GameEvents.Current.ScreenBounds.x - xOffset)
+            if (position.x <= -GameEvents.Current.ScreenBounds.x - (xOffset * 2f))
             {
                 transform.position = new Vector3(position.x + (xOffset * numSections), position.y, position.z);
             }

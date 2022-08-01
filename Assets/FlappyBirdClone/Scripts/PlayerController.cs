@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace FlappyBirdClone.Scripts
 {
@@ -36,6 +37,7 @@ namespace FlappyBirdClone.Scripts
             
             controls = new PlayerControls();
             controls.PlayerActions.Jump.performed += ctx => Jump();
+            controls.PlayerActions.Quit.performed += ctx => Quit();
 
             audioSource = GetComponent<AudioSource>();
             animator = GetComponent<Animator>();
@@ -111,6 +113,15 @@ namespace FlappyBirdClone.Scripts
             {
                 rigidbody2D.AddForce(transform.up * jumpStrength, ForceMode2D.Impulse);
             }
+        }
+        
+        private void Quit() {
+            #if UNITY_STANDALONE
+                Application.Quit();
+            #endif
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #endif
         }
 
         private void OnCollisionEnter2D(Collision2D other)

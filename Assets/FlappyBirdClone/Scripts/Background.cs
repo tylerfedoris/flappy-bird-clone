@@ -176,17 +176,17 @@ namespace FlappyBirdClone.Scripts
         private IEnumerator LerpAlpha(SpriteRenderer spriteToTransition, float endAlpha, float duration)
         {
             float elapsedTime = 0;
-            var startValue = spriteToTransition.color;
+            var startValue = spriteToTransition.material.color;
             var endValue = new Color(startValue.r, startValue.b, startValue.g, endAlpha);
 
             while (elapsedTime < duration)
             {
-                spriteToTransition.color = Color.Lerp(startValue, endValue, elapsedTime / duration);
+                spriteToTransition.material.color = Color.Lerp(startValue, endValue, elapsedTime / duration);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
 
-            spriteToTransition.color = endValue;
+            spriteToTransition.material.color = endValue;
         }
     }
 }
