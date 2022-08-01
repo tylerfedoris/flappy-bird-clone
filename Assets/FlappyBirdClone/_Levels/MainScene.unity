@@ -373,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302799874477242576, guid: 4e5ebf020d585ca4db1531ab5b984d70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 8302799874477242576, guid: 4e5ebf020d585ca4db1531ab5b984d70, type: 3}
       propertyPath: m_LocalPosition.y
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1175698430}
   BestScoreText: {fileID: 579157857}
-  DayLengthByScore: 15
+  DayLengthByScore: 5
   isDebugging: 0
   GameStart: 0
   GameOver: 0
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundA: {fileID: 649226753}
   backgroundB: {fileID: 1194694442}
-  transitionDuration: 10
+  transitionDuration: 5
 --- !u!1 &813996861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,7 +1704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302799874477242576, guid: 4e5ebf020d585ca4db1531ab5b984d70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 8302799874477242576, guid: 4e5ebf020d585ca4db1531ab5b984d70, type: 3}
       propertyPath: m_LocalPosition.y

@@ -30,12 +30,16 @@ namespace FlappyBirdClone.Scripts
         [SerializeField] private BackgroundObject SectionB;
         [SerializeField] private BackgroundObject SectionC;
 
+        private SpriteRenderer[] SectionATopSpriteRenderers;
+
         private void Awake()
         {
             if (backgroundIndex > backgroundSprites.Count)
             {
                 return;
             }
+            
+            SectionATopSpriteRenderers = SectionA.top.GetComponentsInChildren<SpriteRenderer>();
             
             // Section A Sprites
             foreach (var spriteRenderer in SectionA.top.GetComponentsInChildren<SpriteRenderer>())
@@ -131,62 +135,26 @@ namespace FlappyBirdClone.Scripts
         
         public void TransitionAlpha(float endAlpha, float duration)
         {
-            foreach (var spriteRenderer in SectionA.top.GetComponentsInChildren<SpriteRenderer>())
+            if (SectionATopSpriteRenderers.Length > 0)
             {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            foreach (var spriteRenderer in SectionA.mid.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            foreach (var spriteRenderer in SectionA.bottom.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            
-            // Section B Sprites
-            foreach (var spriteRenderer in SectionB.top.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            foreach (var spriteRenderer in SectionB.mid.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            foreach (var spriteRenderer in SectionB.bottom.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            
-            // Section C Sprites
-            foreach (var spriteRenderer in SectionC.top.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            foreach (var spriteRenderer in SectionC.mid.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
-            }
-            foreach (var spriteRenderer in SectionC.bottom.GetComponentsInChildren<SpriteRenderer>())
-            {
-                StartCoroutine(LerpAlpha(spriteRenderer, endAlpha, duration));
+                StartCoroutine(LerpAlpha(SectionATopSpriteRenderers[0], endAlpha, duration));   
             }
         }
 
         private IEnumerator LerpAlpha(SpriteRenderer spriteToTransition, float endAlpha, float duration)
         {
             float elapsedTime = 0;
-            var startValue = spriteToTransition.material.color;
+            var startValue = spriteToTransition.sharedMaterial.color;
             var endValue = new Color(startValue.r, startValue.b, startValue.g, endAlpha);
 
             while (elapsedTime < duration)
             {
-                spriteToTransition.material.color = Color.Lerp(startValue, endValue, elapsedTime / duration);
+                spriteToTransition.sharedMaterial.color = Color.Lerp(startValue, endValue, elapsedTime / duration);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
 
-            spriteToTransition.material.color = endValue;
+            spriteToTransition.sharedMaterial.color = endValue;
         }
     }
 }
