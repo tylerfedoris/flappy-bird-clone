@@ -471,7 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1175698430}
   BestScoreText: {fileID: 579157857}
-  DayLengthByScore: 5
+  DayLengthByScore: 15
   isDebugging: 0
   GameStart: 0
   GameOver: 0
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundA: {fileID: 649226753}
   backgroundB: {fileID: 1194694442}
-  transitionDuration: 5
+  transitionDuration: 15
 --- !u!1 &813996861
 GameObject:
   m_ObjectHideFlags: 0
